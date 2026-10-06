@@ -4,7 +4,7 @@ Proposed edits only, from the [24 Sep monthly business review](brain/knowledge/m
 
 ## P1. `people/dana-reyes.md`
 - **Role:** "Head of Growth" → "VP Growth, Kettle & Crumb (client)".
-- **Add:** "Attends: monthly business reviews. Jess Park joins the weeklies (from 24 Sep)."
+- **Add:** "From 24 Sep: will be at the monthly business reviews; Jess Park joins the weeklies."
 - **What she has told us, add:** "2026-09-24: promotion, GMV figure from finance, October goals. [recap](../meetings/2026-09-24-kettle-and-crumb.md)"
 - **Open threads:** remove "sample shipping budget (asked twice, not yet answered)". Closed on 24 Sep by Jess Park.
 - **updated:** 2026-09-24.
@@ -27,7 +27,8 @@ updated: 2026-09-24
 ```
 
 ## P3. `accounts/kettle-and-crumb.md`
-- **Client contact:** "Dana Reyes, Head of Growth" → "Dana Reyes, VP Growth (monthly reviews); Jess Park, ops and fulfillment (samples, inventory; weeklies)".
+- **Client contact:** "Dana Reyes, Head of Growth" → "Dana Reyes, VP Growth; Jess Park, ops and fulfillment (samples, inventory)".
+- **Add:** "From 24 Sep: Dana will be at the monthly business reviews; Jess Park joins the weeklies."
 - **Current focus, add:** "Fall flavor launch 6 Oct; goal to double the posting rate on it after launch."
 - **Meetings, add:** "[2026-09-24 monthly business review](../meetings/2026-09-24-kettle-and-crumb.md)"
 - **updated:** 2026-09-24.
