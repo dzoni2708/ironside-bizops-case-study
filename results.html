@@ -1,0 +1,153 @@
+<title>Ironside Biz Ops Case Study</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@500;600;700&family=Public+Sans:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+  /* Layout: single reading column (~72ch), report-style sections; data in tables, status as pills. Light theme only, by choice. */
+  :root {
+    color-scheme: light;
+    --bg: #f6f7f9; --surface: #ffffff; --fg: #151a23; --muted: #5a6373; --line: #dde1e8;
+    --accent: #2743c9; --accent-soft: #e8ecfb;
+    --good: #1d7a4b; --good-soft: #e3f3ea; --bad: #b3261e; --wait: #8a5a00; --wait-soft: #fbf1dc;
+    --display: "Familjen Grotesk", "Helvetica Neue", Arial, sans-serif;
+    --body: "Public Sans", "Segoe UI", Arial, sans-serif;
+    --mono: "JetBrains Mono", ui-monospace, Consolas, monospace;
+  }
+
+  body { background: var(--bg); color: var(--fg); font: 16px/1.6 var(--body); padding-inline: 16px; padding-block: 40px 64px; }
+  main { max-width: 760px; margin: 0 auto; display: grid; gap: 48px; }
+  h1, h2, h3 { font-family: var(--display); line-height: 1.2; text-wrap: balance; margin: 0; }
+  h1 { font-size: clamp(30px, 5vw, 40px); font-weight: 700; letter-spacing: -0.01em; }
+  h2 { font-size: 24px; font-weight: 600; }
+  h3 { font-size: 18px; font-weight: 600; }
+  p { margin: 0; }
+  a { color: var(--accent); text-underline-offset: 2px; }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+  ul { margin: 0; padding-left: 20px; display: grid; gap: 6px; }
+  .eyebrow { font: 600 12px/1 var(--mono); letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+  .lede { font-size: 18px; color: var(--muted); max-width: 62ch; }
+  header { display: grid; gap: 14px; }
+  .meta { display: flex; flex-wrap: wrap; gap: 8px 24px; font-size: 14px; color: var(--muted); border-top: 1px solid var(--line); padding-top: 14px; }
+  .meta b { color: var(--fg); font-weight: 600; }
+  section { display: grid; gap: 18px; }
+  .section-head { display: grid; gap: 6px; border-bottom: 1px solid var(--line); padding-bottom: 10px; }
+  .q { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 18px 20px; display: grid; gap: 12px; min-width: 0; }
+  .q-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px 12px; }
+  .q-id { font: 600 13px/1 var(--mono); color: var(--accent); }
+  .pill { font: 600 11px/1 var(--mono); letter-spacing: 0.06em; text-transform: uppercase; padding: 5px 8px; border-radius: 99px; margin-left: auto; }
+  .pill.done { background: var(--good-soft); color: var(--good); }
+  .pill.wip { background: var(--wait-soft); color: var(--wait); }
+  .files { font-size: 14px; color: var(--muted); }
+  .files a { font-family: var(--mono); font-size: 13px; }
+  .table-wrap { overflow-x: auto; }
+  table { width: 100%; border-collapse: collapse; font-size: 15px; font-variant-numeric: tabular-nums; }
+  th, td { text-align: left; padding: 9px 10px; border-bottom: 1px solid var(--line); white-space: nowrap; }
+  th { font: 600 12px/1.2 var(--mono); letter-spacing: 0.04em; text-transform: uppercase; color: var(--muted); }
+  td.num, th.num { text-align: right; }
+  td.share { font-weight: 600; }
+  .bad { color: var(--bad); }
+  .callout { background: var(--accent-soft); border-radius: 8px; padding: 16px 18px; display: grid; gap: 10px; }
+  .big { font: 700 34px/1 var(--display); color: var(--accent); }
+  footer { font-size: 14px; color: var(--muted); border-top: 1px solid var(--line); padding-top: 16px; }
+</style>
+
+<main>
+  <header>
+    <span class="eyebrow">Case study submission · v1.2 · Biz Ops</span>
+    <h1>Ironside Biz Ops Case Study</h1>
+    <p class="lede">Answers to all three blocks: recaps and briefings written into the company brain, the recap-within-an-hour number by pod and what is holding it back, and changes to the recap agent.</p>
+    <div class="meta">
+      <span>Time spent: <b>to follow</b></span>
+      <span>Questions skipped: <b>to follow</b></span>
+      <span>Working folder: <a href="https://github.com/dzoni2708/ironside-bizops-case-study">GitHub repository</a></span>
+    </div>
+  </header>
+
+  <section aria-labelledby="block-a">
+    <div class="section-head"><span class="eyebrow">Block A</span><h2 id="block-a">Do the work</h2></div>
+
+    <article class="q">
+      <div class="q-head"><span class="q-id">A1</span><h3>Recap: Kettle &amp; Crumb weekly, 22 Sep</h3><span class="pill done">Done</span></div>
+      <ul>
+        <li>Private remarks made after the client left the call are left out, with a neutral note for a reviewer.</li>
+        <li>Performance numbers link to the reference sheet. Points the client had already made link to the earlier recaps.</li>
+        <li>A task with no named owner is listed as an open question rather than given an owner nobody agreed to.</li>
+      </ul>
+      <p class="files">File: <a href="https://github.com/dzoni2708/ironside-bizops-case-study/blob/main/brain/knowledge/meetings/2026-09-22-kettle-and-crumb.md">2026-09-22-kettle-and-crumb.md</a></p>
+    </article>
+
+    <article class="q">
+      <div class="q-head"><span class="q-id">A2</span><h3>Recap: Kettle &amp; Crumb business review, 24 Sep, with proposed page edits</h3><span class="pill done">Done</span></div>
+      <ul>
+        <li>The client's 30-day GMV differs from the reference sheet, and its scope was not confirmed. It is flagged, and the sheet update waits for confirmation.</li>
+        <li>The sample budget is settled at $8 a box, up to $600 a month. That covers 75 boxes, while October needs about 70 for the fall flavor launch plus affiliate samples.</li>
+        <li>Proposed edits for the client contact's page, a new contact's page and the account page. Nothing changes until a pod lead approves.</li>
+      </ul>
+      <p class="files">Files: <a href="https://github.com/dzoni2708/ironside-bizops-case-study/blob/main/brain/knowledge/meetings/2026-09-24-kettle-and-crumb.md">2026-09-24-kettle-and-crumb.md</a> · <a href="https://github.com/dzoni2708/ironside-bizops-case-study/blob/main/proposed-changes.md">proposed-changes.md</a></p>
+    </article>
+
+    <article class="q">
+      <div class="q-head"><span class="q-id">A3</span><h3>Briefing: Kettle &amp; Crumb affiliates, end to end</h3><span class="pill done">Done</span></div>
+      <ul>
+        <li>The affiliate process from finding creators to paying commission, each step linked to where the client agreed it.</li>
+        <li>One conflict to resolve: samples go only to creators on the targeted plan, but that plan covers the top 10 creators and the goal is 60 affiliates.</li>
+        <li>What is still open, what to confirm internally first, and what the client has already answered.</li>
+      </ul>
+      <p class="files">File: <a href="https://github.com/dzoni2708/ironside-bizops-case-study/blob/main/answer.md">answer.md</a></p>
+    </article>
+  </section>
+
+  <section aria-labelledby="block-b">
+    <div class="section-head"><span class="eyebrow">Block B</span><h2 id="block-b">Move the number</h2></div>
+
+    <article class="q">
+      <div class="q-head"><span class="q-id">B1</span><h3>Pods ranked on recaps posted within an hour</h3><span class="pill done">Done</span></div>
+      <p>Share of client calls with a recap posted within an hour, recalculated from the September call log (140 calls). Target: 80% in every pod by 31 Oct.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Rank</th><th>Pod</th><th>Lead</th><th class="num">Calls</th><th class="num">Recorded</th><th class="num">Within 1h</th><th class="num">Share</th><th class="num">Dashboard</th></tr></thead>
+          <tbody>
+            <tr><td>1</td><td>North</td><td>Sam Whitaker</td><td class="num">40</td><td class="num">38</td><td class="num">36</td><td class="num share">90%</td><td class="num">90%</td></tr>
+            <tr><td>2</td><td>East</td><td>Aisha Rahman</td><td class="num">30</td><td class="num">28</td><td class="num">21</td><td class="num share">70%</td><td class="num bad">75%</td></tr>
+            <tr><td>3</td><td>South</td><td>Marcus Obi</td><td class="num">40</td><td class="num">36</td><td class="num">14</td><td class="num share">35%</td><td class="num">35%</td></tr>
+            <tr><td>4</td><td>West</td><td>Lena Varga</td><td class="num">30</td><td class="num">4</td><td class="num">3</td><td class="num share">10%</td><td class="num">10%</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>The dashboard shows East at 75% because it divides by recorded calls (21 of 28). Divided by calls held, like the other pods, East is at 70%: 10 points short of target, not 5.</p>
+      <div class="callout">
+        <span class="eyebrow">One more number</span>
+        <p><span class="big">49%</span></p>
+        <p>Share of agent recaps posted within the hour (29 of 59, median 65 minutes). Account managers' recaps: 45 of 45, median 18 minutes.</p>
+        <ul>
+          <li>No pod can reach 80% on the agent alone.</li>
+          <li>North reaches 90% because account managers wrote 33 of its 36 on-time recaps.</li>
+          <li>South relies on the agent for every recap, and sits at 35%.</li>
+          <li>For North, East and South, the gap is agent speed, not adoption.</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="q">
+      <div class="q-head"><span class="q-id">B2</span><h3>Which pod first, and what is causing its gap</h3><span class="pill wip">To follow</span></div>
+    </article>
+    <article class="q">
+      <div class="q-head"><span class="q-id">B3</span><h3>One-week plan for that pod</h3><span class="pill wip">To follow</span></div>
+    </article>
+  </section>
+
+  <section aria-labelledby="block-c">
+    <div class="section-head"><span class="eyebrow">Block C</span><h2 id="block-c">Train the agent</h2></div>
+    <article class="q">
+      <div class="q-head"><span class="q-id">C1</span><h3>What is wrong with the agent's recap</h3><span class="pill wip">To follow</span></div>
+    </article>
+    <article class="q">
+      <div class="q-head"><span class="q-id">C2</span><h3>Skill fix, with before and after</h3><span class="pill wip">To follow</span></div>
+    </article>
+    <article class="q">
+      <div class="q-head"><span class="q-id">C3</span><h3>Ticket for the agent's engineer</h3><span class="pill wip">To follow</span></div>
+    </article>
+  </section>
+
+  <footer>All names, brands and numbers come from the fictional case materials.</footer>
+</main>
