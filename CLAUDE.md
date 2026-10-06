@@ -27,5 +27,6 @@ State the result in chat before saving:
 - Never modify `inbox/`, `workers/output/`, `brain/knowledge/reference/` or the CSVs. They are inputs.
 - Deliverables at repo root: `log.md`, `proposed-changes.md`, `answer.md`, `plan.md`, `fde-ticket.md`, `extra/`.
 - When the user catches an AI mistake, propose a `log.md` entry (what was wrong, how caught, fixed instruction or output only). **Show the exact log text to the user and get approval before writing it.**
+- **Review format for every deliverable:** first list the rule-based decisions (each citing its rule), then underneath list the judgement calls the user needs to make.
 - **Every write goes through a pull request.** Branch from `main` per step (e.g. `a1-call-1-recap`), commit, push, `gh pr create`. Never commit to `main` directly. PR timestamps are our record of time spent.
 - **C2 isolation:** the fresh-session rerun must see only the skill, `brain/` and the transcript. Run it from a scratch copy with no CLAUDE.md.
