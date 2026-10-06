@@ -25,9 +25,9 @@ source: inbox/call-1.md
 | Dana Reyes | Confirm the sample shipping budget, including the monthly cap | 2026-09-25 |
 
 ## Open questions
-- Who sends the samples on Thu 24 Sep? The send was agreed on the call, but no owner was named. *First raised 22 Sep.*
-- The [3 Sep sample policy](2026-09-03-kettle-and-crumb-affiliates-deep-dive.md) sends a box only after a creator accepts the targeted plan. Does the 24 Sep send wait for that, or go to every approved creator? *First raised 22 Sep.*
-- Does the sample budget Dana confirms on 25 Sep also cover the roughly 70 creators she wants sampled for the fall flavor launch ([17 Sep](2026-09-17-kettle-and-crumb-weekly.md))? *First raised 22 Sep.*
+- Who sends the samples on Thu 24 Sep? The send was agreed on the call, but no owner was named.
+- The [3 Sep sample policy](2026-09-03-kettle-and-crumb-affiliates-deep-dive.md) sends a box only after a creator accepts the targeted plan. Does the 24 Sep send wait for that, or go to every approved creator?
+- Does the sample budget Dana confirms on 25 Sep also cover the roughly 70 creators she wants sampled for the fall flavor launch ([17 Sep](2026-09-17-kettle-and-crumb-weekly.md))?
 
 ## Flags for a person
 - Part of the recording was held back under SANITIZER. A person should review the recording.
