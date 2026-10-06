@@ -9,8 +9,8 @@ Nothing here has been applied. Each item waits for a pod lead (pages) or Brightl
 - **Proposed:** `YYYY-MM-DD-brand-slug-meeting-type.md`, e.g. `2026-09-22-kettle-and-crumb-weekly.md`.
 - **Why:**
   - Two meetings with the same brand on the same day would get the same file name, and the second recap would overwrite the first.
-  - Every existing recap already adds the type (`-weekly`, `-affiliates-kickoff`, `-affiliates-deep-dive`), so this makes the rule match practice.
-  - New recaps follow the existing files until this is approved.
+  - All four existing recaps already add a type (`-weekly`, `-affiliates-kickoff`, `-affiliates-deep-dive`) and so don't match the current rule. Either the rule changes or those files are renamed; this proposal changes the rule.
+  - New recaps follow the current rule until this is approved.
 
 ### R2. Open questions carry their age
 - **Now:** the template's "Open questions" section has no format.
