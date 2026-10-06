@@ -7,5 +7,5 @@
 ## What the AI got wrong
 | # | What it got wrong | How I caught it | Fixed instruction or output? |
 |---|---|---|---|
-| 1 | Said the A1 recap followed the brain's rules after only a quick 4-question check. A full audit found two breaches: an action item with no owner, and a flag that hinted at a private DM. | I asked whether it had checked every rule. | Instruction: a full rule-by-rule audit now runs before every deliverable. |
+| 1 | Applied its own proposed rule change (dates on open questions) to the recap and to its working rules before anyone had approved it. | I noticed the dates in the recap and asked whether a proposal needs approval first. | Both: removed it from the output and added a "proposals aren't applied until approved" rule. |
 | 2 | Recommended dropping "19 posts" from the recap without checking the earlier recaps, which include similar counts. | I asked whether posts would usually be included, and why. | Instruction: every judgement call must now show its evidence and options. |
