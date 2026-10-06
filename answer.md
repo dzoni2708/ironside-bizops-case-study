@@ -3,7 +3,7 @@
 ## In short
 - **Goal:** 60 active affiliates by 31 Oct. The [sheet](brain/knowledge/reference/accounts-sheet.csv) had 32 on 21 Sep, and the 22 Sep call matched it.
 - **Who's who has changed:** Dana is now VP Growth and will be at the monthly reviews. **Jess Park** now owns samples, inventory and the shipping budget, and joins the weeklies. Sample questions go to Jess.
-- **Biggest risk:** the sample budget. $8 a box with a $600 monthly cap buys 75 boxes a month, but October needs about 70 for the fall flavor launch *plus* the affiliate samples toward 60.
+- **Biggest risks:** the sample rules don't add up (samples need the targeted plan, which is capped at the top 10), and the budget is tight. $8 a box with a $600 monthly cap buys 75 boxes a month, but October needs about 70 for the fall flavor launch *plus* the affiliate samples toward 60.
 - **Confirm the GMV scope:** Dana's latest GMV figure may include DTC. Ask before anyone updates the sheet.
 - **Don't re-ask** what she has already answered (list below). The shipping budget took three asks to close.
 
@@ -20,10 +20,10 @@
 
 ## Open
 **Worth raising with Dana**
-1. **Budget vs October demand.** 75 boxes a month may not cover the fall flavor and affiliates together. Agree which gets priority, or raise the cap (Jess owns it).
-2. **Ask: is the 30-day GMV figure TikTok Shop only, or does it include DTC?** Dana's finance team gave a figure that differs from the [sheet](brain/knowledge/reference/accounts-sheet.csv); both figures are in [proposal P4](proposed-changes.md). Marcus asked about scope on 24 Sep and it wasn't confirmed. It matters because GMV is the account's headline number and every page links to the sheet for it. The sheet update is on hold until this is answered.
-3. **"Double the posting rate":** compared with which baseline?
-4. **Sample timing.** Policy is a box only after a creator accepts the targeted plan, but the 22 Sep batch was set to ship the day after approval. Which applies?
+1. **Samples vs the targeted plan.** Samples go only to creators who accept the targeted plan ([3 Sep](brain/knowledge/meetings/2026-09-03-kettle-and-crumb-affiliates-deep-dive.md)), but that plan is for the top 10 creators ([12 Aug](brain/knowledge/meetings/2026-08-12-kettle-and-crumb-affiliates-kickoff.md)). With 60 affiliates as the goal, either most affiliates won't get samples, or the 20% plan is growing past 10. Which does Dana intend? It also decides whether the 22 Sep batch ships straight after approval, and how far the sample budget stretches.
+2. **Budget vs October demand.** 75 boxes a month may not cover the fall flavor and affiliates together. Agree which gets priority, or raise the cap (Jess owns it).
+3. **Ask: is the 30-day GMV figure TikTok Shop only, or does it include DTC?** Dana's finance team gave a figure that differs from the [sheet](brain/knowledge/reference/accounts-sheet.csv); both figures are in [proposal P4](proposed-changes.md). Marcus asked about scope on 24 Sep and it wasn't confirmed. It matters because GMV is the account's headline number and every page links to the sheet for it. The sheet update is on hold until this is answered.
+4. **"Double the posting rate":** compared with which baseline?
 5. **Who sent the 22 Sep batch's samples (due 24 Sep)?** No owner was named on the call. From 24 Sep, shipping runs through Jess, so this only affects that batch.
 
 **Check with Marcus before the call** (no recap since 24 Sep confirms these)
