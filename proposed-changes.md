@@ -1,18 +1,44 @@
 # Proposed changes
 
-Nothing here has been applied. Each item waits for a pod lead (pages) or Brightline ops (rules) to approve.
+Proposed edits only, from the [24 Sep monthly business review](brain/knowledge/meetings/2026-09-24-kettle-and-crumb.md). None of these pages have been changed. Page edits wait for the South pod lead to approve; the sheet edit waits for the sheet's owner.
 
-## Changes to brain rules (`brain/RESOLVER.md`)
+## P1. `people/dana-reyes.md`
+- **Role:** "Head of Growth" → "VP Growth, Kettle & Crumb (client)".
+- **Add:** "Attends: monthly business reviews. Jess Park joins the weeklies (from 24 Sep)."
+- **What she has told us, add:** "2026-09-24: promotion, GMV figure from finance, October goals. [recap](../meetings/2026-09-24-kettle-and-crumb.md)"
+- **Open threads:** remove "sample shipping budget (asked twice, not yet answered)". Closed on 24 Sep by Jess Park.
+- **updated:** 2026-09-24.
 
-### R1. Add the meeting type to recap file names
-- **Now:** `YYYY-MM-DD-brand-slug.md`.
-- **Proposed:** `YYYY-MM-DD-brand-slug-meeting-type.md`, e.g. `2026-09-22-kettle-and-crumb-weekly.md`.
-- **Why:**
-  - Two meetings with the same brand on the same day would get the same file name, and the second recap would overwrite the first.
-  - All four existing recaps already add a type (`-weekly`, `-affiliates-kickoff`, `-affiliates-deep-dive`) and so don't match the current rule. Either the rule changes or those files are renamed; this proposal changes the rule.
-  - New recaps follow the current rule until this is approved.
+## P2. New page `people/jess-park.md`
+```
+---
+type: person
+updated: 2026-09-24
+---
 
-### R2. Open questions carry their age
-- **Now:** the template's "Open questions" section has no format.
-- **Proposed:** each open question ends with *First raised <date>*, linking the earlier recap if it started there. A question that has passed a due date says so.
-- **Why:** the sample shipping budget was raised on 12 Aug, raised again on 3 Sep with an answer due 10 Sep, and came up a third time on 22 Sep. No page showed that it had slipped. With dates on every open question, slipped items are visible to anyone reading the latest recap.
+# Jess Park
+
+- **Role:** ops and fulfillment, Kettle & Crumb (client)
+- **Owns on their side:** samples, inventory, sample shipping budget
+- **Works with:** Marcus Obi (AM, South pod)
+- **Attends:** weekly calls (from 24 Sep)
+- **What she has told us:**
+  - 2026-09-24: sample shipping budget settled. [recap](../meetings/2026-09-24-kettle-and-crumb.md)
+```
+
+## P3. `accounts/kettle-and-crumb.md`
+- **Client contact:** "Dana Reyes, Head of Growth" → "Dana Reyes, VP Growth (monthly reviews); Jess Park, ops and fulfillment (samples, inventory; weeklies)".
+- **Current focus, add:** "Fall flavor launch 6 Oct; goal to double the posting rate on it after launch."
+- **Meetings, add:** "[2026-09-24 monthly business review](../meetings/2026-09-24-kettle-and-crumb.md)"
+- **updated:** 2026-09-24.
+
+## P4. `reference/accounts-sheet.csv`: GMV
+- **Status: on hold.** Blocked by the open GMV scope question in the [24 Sep recap](brain/knowledge/meetings/2026-09-24-kettle-and-crumb.md). Approve only after it is answered.
+
+| Field | Sheet now | Stated on call |
+|---|---|---|
+| `gmv_last_30d_usd` | 140,000 (updated 21 Sep) | 210,000 (Dana, 24 Sep, "the number our finance team sent") |
+
+- **Proposed new value:** 210,000, with `sheet_updated` 2026-09-24, once the figure is confirmed to match the sheet's scope (TikTok Shop only, same 30-day basis).
+- **Why hold:** Kettle & Crumb sells on TikTok Shop and DTC. Marcus asked whether the figure was TikTok Shop only, and it wasn't confirmed. A 50% rise when the window moves by three days points to a different scope, not growth.
+- **Where to fix:** `reference/` holds source-of-truth exports ("consult, don't edit"), so the change belongs in the system the sheet is exported from, not in the CSV.
