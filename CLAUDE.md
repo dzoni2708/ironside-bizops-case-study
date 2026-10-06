@@ -28,6 +28,7 @@ Audit every rule in RESOLVER, SANITIZER and this file line by line against the o
 3. Did anything come from a DM, side comment or after-call chatter? If so, it is out and flagged neutrally.
 4. Template complete: frontmatter, summary 3–6 bullets, every action item has one owner + due date, earlier meetings linked, weekdays turned into verified dates?
 5. Does every claim match the source wording (no words put in someone's mouth)?
+6. For synthesis questions (e.g. "end to end"), do the facts from different sources contradict each other once combined?
 
 ## Project conventions
 - Never modify `inbox/`, `workers/output/`, `brain/knowledge/reference/` or the CSVs. They are inputs.
