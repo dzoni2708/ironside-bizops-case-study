@@ -60,7 +60,7 @@
     <p class="lede">Answers to all three blocks: recaps and briefings written into the company brain, the recap-within-an-hour number by pod and what is holding it back, and changes to the recap agent.</p>
     <div class="meta">
       <span>Time spent: <b>about 3 hours</b></span>
-      <span>Questions skipped: <b>none; extra credit not attempted</b></span>
+      <span>Questions skipped: <b>none</b></span>
       <span>Working folder: <a href="https://github.com/dzoni2708/ironside-bizops-case-study">GitHub repository</a></span>
     </div>
   </header>
@@ -206,9 +206,19 @@
     </article>
   </section>
 
+  <section aria-labelledby="extra">
+    <div class="section-head"><span class="eyebrow">Extra credit</span><h2 id="extra">Open-points list</h2></div>
+    <article class="q">
+      <p>A small script that lists every action item and open question in the brain's recaps, per account: what is past due, what is due in the next 7 days, and how long each question has been open.</p>
+      <p><strong>Why I picked it:</strong> the sample shipping budget stayed open for six weeks across three recaps, and nothing in the brain showed it.</p>
+      <p><strong>Limit:</strong> recaps never record an item as done, so "past due" means "confirm it was done, or chase it".</p>
+      <p class="files">Run: <code>node extra/open-points.js --today 2026-09-25</code> · Files: <a href="https://github.com/dzoni2708/ironside-bizops-case-study/tree/main/extra">extra/</a></p>
+    </article>
+  </section>
+
   <section aria-labelledby="next">
     <div class="section-head"><h2 id="next">What I would automate next</h2></div>
-    <p>Next I would automate follow-up on open points: every recap's action items and open questions go into one list per account, the owner gets a reminder before each due date, and anything overdue or open for more than a week is flagged to the pod lead. The brain shows why: Kettle &amp; Crumb's sample shipping budget was raised on 12 Aug, given a due date of 10 Sep, missed, and raised again on 22 Sep before it closed, and no page showed that the deadline had passed. Because the brain's recaps share one template, with an owner and a due date on every action item, the list can be built from recaps that already exist, and it tracks what a recap is for: commitments kept, not just recaps posted.</p>
+    <p>Next I would automate follow-up on open points, building on the first version in extra/: every recap's action items and open questions go into one list per account, the owner gets a reminder before each due date, and anything overdue or open for more than a week is flagged to the pod lead. The brain shows why: Kettle &amp; Crumb's sample shipping budget was raised on 12 Aug, given a due date of 10 Sep, missed, and raised again on 22 Sep before it closed, and no page showed that the deadline had passed. Because the brain's recaps share one template, with an owner and a due date on every action item, the list can be built from recaps that already exist, and it tracks what a recap is for: commitments kept, not just recaps posted.</p>
   </section>
 
   <section aria-labelledby="how">
