@@ -135,7 +135,7 @@
       <ul>
         <li><strong>The agent is too slow for how South works.</strong> South relies on the agent for every recap. It posts within the hour 14 times out of 34, with a median of 74 minutes, at every time of day.</li>
         <li><strong>So the team works around it.</strong> Marcus and Tomas send clients their own notes first, then skip the agent's recap when it arrives (<a href="https://github.com/dzoni2708/ironside-bizops-case-study/blob/main/slack-thread.txt">Slack thread</a>). Those notes are fast, but they are never posted as recaps, so they don't count and never reach the brain. Two recorded Kettle &amp; Crumb calls never got a recap at all: the two recapped by hand in Block A.</li>
-        <li><strong>It is not adoption or quality.</strong> South records 90% of its calls, and Marcus says the content is fine: "if it posted in 10–15 min I'd use it."</li>
+        <li><strong>It is not the recording or the recap quality.</strong> South records 90% of its calls, and Marcus says the content is fine: "if it posted in 10–15 min I'd use it."</li>
       </ul>
       <p>North shows the fix: its account managers post recaps themselves, typically within 18 minutes.</p>
       <p>The proposal to count emailed summaries would move the number without fixing anything. Emailed summaries don't reach the brain or the client's Slack channel, and nothing checks that they carry action items with an owner and a due date. Keep the definition and fix the speed.</p>
@@ -144,9 +144,9 @@
       <div class="q-head"><span class="q-id">B3</span><h3>One-week plan for South</h3><span class="pill done">Done</span></div>
       <p><strong>The idea:</strong> South already writes fast notes. Post them as the recap, in the client's channel, within the hour, the way North does. Engineering makes the agent fast enough to take over again.</p>
       <ul>
-        <li><strong>I do:</strong> set Marcus and Tomas up with a template that formats their notes in two minutes, check each call at 45 minutes, fix the dashboard, and post the number on Friday.</li>
+        <li><strong>I do:</strong> set Marcus and Tomas up with a template that formats their notes in two minutes and checks them against the brain's rules, check each call at 45 minutes, fix the dashboard, and post the number on Friday.</li>
         <li><strong>The pod:</strong> posts its own notes as the recap, and the client email links to it.</li>
-        <li><strong>Engineering:</strong> recaps within 15 minutes, no duplicate when an account manager has already posted, and account-manager recaps logged so they count.</li>
+        <li><strong>Engineering:</strong> recaps within 15 minutes, and a switch so the agent files to the brain without posting a second recap in the client's channel.</li>
         <li><strong>By Friday:</strong> 70% of the week's South calls with a recap within an hour, up from 35%.</li>
       </ul>
       <p class="files">File, with the message to Marcus and his likely pushback: <a href="https://github.com/dzoni2708/ironside-bizops-case-study/blob/main/plan.md">plan.md</a></p>
