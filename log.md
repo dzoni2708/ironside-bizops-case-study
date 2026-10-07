@@ -1,6 +1,6 @@
 # Log
 
-**Time:** Human ~4 h · AI ~4 h (Claude Code worked alongside me throughout; PR timestamps in the repo are the record)
+**Time:** about 3 hours. Human ~3 h; the AI (Claude Code) worked alongside me in the same session, so its ~3 h overlap with mine rather than add to them.
 
 **First instruction:** Read the case study, explain what it asks for, and propose a plan to work through it carefully.
 
