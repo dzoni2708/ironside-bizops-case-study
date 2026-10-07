@@ -1,5 +1,5 @@
-**What:** lists every action item and open question in the brain's recaps, per account: what is past due, what is due in the next 7 days, and how long each question has been open.
-**Why I picked it:** the sample shipping budget stayed open for six weeks across three recaps, and nothing in the brain showed it.
-**Run:** `node extra/open-points.js --today 2026-09-25` (Node 18+, no installs; leave out `--today` to use the real date).
-**Limit:** recaps never record an item as done, so "past due" means "confirm it was done, or chase it".
-**Next:** close items automatically when a later recap says they're done, then message each owner the day before a due date.
+**What:** a gate to run before a recap is posted: it checks the template and the brain's red flags, flags recap lines that repeat what was said after the client left the call, and fails the recap if a number said on the call conflicts with the reference sheet and the recap doesn't flag it.
+**Why I picked it:** checking recaps against RESOLVER and SANITIZER took most of my time on Block A, and it is a working first version of the two engineering asks in my ticket.
+**Run:** `node extra/recap-gate.js workers/output/bad-recap.md workers/output/after-recap.md --transcript workers/output/bad-recap-source.md` (Node 18+, no installs; with no files it checks every recap in the brain). The full report is written to `extra/recap-gate-report.md`.
+**Limit:** it can't judge meaning (wording, contradictions between recaps), so a person still reads for that.
+**Next:** run it automatically before the agent or an account manager posts, and block the post on a fail.

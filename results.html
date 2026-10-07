@@ -207,18 +207,19 @@
   </section>
 
   <section aria-labelledby="extra">
-    <div class="section-head"><span class="eyebrow">Extra credit</span><h2 id="extra">Open-points list</h2></div>
+    <div class="section-head"><span class="eyebrow">Extra credit</span><h2 id="extra">Recap gate</h2></div>
     <article class="q">
-      <p>A small script that lists every action item and open question in the brain's recaps, per account: what is past due, what is due in the next 7 days, and how long each question has been open.</p>
-      <p><strong>Why I picked it:</strong> the sample shipping budget stayed open for six weeks across three recaps, and nothing in the brain showed it.</p>
-      <p><strong>Limit:</strong> recaps never record an item as done, so "past due" means "confirm it was done, or chase it".</p>
-      <p class="files">Run: <code>node extra/open-points.js --today 2026-09-25</code> · Files: <a href="https://github.com/dzoni2708/ironside-bizops-case-study/tree/main/extra">extra/</a></p>
+      <p>A script to run before a recap is posted. It checks the template and the brain's red flags, flags recap lines that repeat what was said after the client left the call, and fails the recap if a number said on the call conflicts with the reference sheet and the recap doesn't flag it. Each run writes a readable report.</p>
+      <p><strong>Why I picked it:</strong> checking recaps against the brain's rules took most of my time on Block A, and it is a working first version of the two engineering asks in my ticket.</p>
+      <p><strong>Result:</strong> on the agent's original recap it fails with 11 problems, including the leaked private message and the unflagged GMV conflict. The rerun and all six recaps in the brain pass.</p>
+      <p><strong>Limit:</strong> it can't judge meaning, such as wording or contradictions between recaps, so a person still reads for that.</p>
+      <p class="files">Files: <a href="https://github.com/dzoni2708/ironside-bizops-case-study/tree/main/extra">extra/</a> · <a href="https://github.com/dzoni2708/ironside-bizops-case-study/blob/main/extra/recap-gate-report.md">sample report</a></p>
     </article>
   </section>
 
   <section aria-labelledby="next">
     <div class="section-head"><h2 id="next">What I would automate next</h2></div>
-    <p>Next I would automate follow-up on open points, building on the first version in extra/: every recap's action items and open questions go into one list per account, the owner gets a reminder before each due date, and anything overdue or open for more than a week is flagged to the pod lead. The brain shows why: Kettle &amp; Crumb's sample shipping budget was raised on 12 Aug, given a due date of 10 Sep, missed, and raised again on 22 Sep before it closed, and no page showed that the deadline had passed. Because the brain's recaps share one template, with an owner and a due date on every action item, the list can be built from recaps that already exist, and it tracks what a recap is for: commitments kept, not just recaps posted.</p>
+    <p>Next I would automate follow-up on open points: every recap's action items and open questions go into one list per account, the owner gets a reminder before each due date, and anything overdue or open for more than a week is flagged to the pod lead. The brain shows why: Kettle &amp; Crumb's sample shipping budget was raised on 12 Aug, given a due date of 10 Sep, missed, and raised again on 22 Sep before it closed, and no page showed that the deadline had passed. Because the brain's recaps share one template, with an owner and a due date on every action item, the list can be built from recaps that already exist, and it tracks what a recap is for: commitments kept, not just recaps posted.</p>
   </section>
 
   <section aria-labelledby="how">
