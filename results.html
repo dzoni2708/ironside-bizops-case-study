@@ -3,7 +3,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@500;600;700&family=Public+Sans:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;600&display=swap">
 <style>
-  /* Layout: single reading column (~72ch), report-style sections; data in tables, status as pills. Light theme only, by choice. */
+  /* Layout: single reading column (~72ch), report-style sections; data in tables. Light theme only, by choice. */
   :root {
     color-scheme: light;
     --bg: #f6f7f9; --surface: #ffffff; --fg: #151a23; --muted: #5a6373; --line: #dde1e8;
@@ -34,9 +34,6 @@
   .q { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 18px 20px; display: grid; gap: 12px; min-width: 0; }
   .q-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px 12px; }
   .q-id { font: 600 13px/1 var(--mono); color: var(--accent); }
-  .pill { font: 600 11px/1 var(--mono); letter-spacing: 0.06em; text-transform: uppercase; padding: 5px 8px; border-radius: 99px; margin-left: auto; }
-  .pill.done { background: var(--good-soft); color: var(--good); }
-  .pill.wip { background: var(--wait-soft); color: var(--wait); }
   .files { font-size: 14px; color: var(--muted); }
   .files a { font-family: var(--mono); font-size: 13px; }
   .table-wrap { overflow-x: auto; }
@@ -59,6 +56,7 @@
     <h1>Ironside Biz Ops Case Study</h1>
     <p class="lede">Answers to all three blocks: recaps and briefings written into the company brain, the recap-within-an-hour number by pod and what is holding it back, and changes to the recap agent.</p>
     <div class="meta">
+      <span>Prepared by <b>Nikola Lukic</b> · 7 October 2026</span>
       <span>Time spent: <b>about 3 hours</b></span>
       <span>Questions skipped: <b>none</b></span>
       <span>Working folder: <a href="https://github.com/dzoni2708/ironside-bizops-case-study">GitHub repository</a></span>
@@ -69,7 +67,7 @@
     <div class="section-head"><span class="eyebrow">Block A</span><h2 id="block-a">Do the work</h2></div>
 
     <article class="q">
-      <div class="q-head"><span class="q-id">A1</span><h3>Recap: Kettle &amp; Crumb weekly, 22 Sep</h3><span class="pill done">Done</span></div>
+      <div class="q-head"><span class="q-id">A1</span><h3>Recap: Kettle &amp; Crumb weekly, 22 Sep</h3></div>
       <ul>
         <li>Private remarks made after the client left the call are left out, with a neutral note for a reviewer.</li>
         <li>Performance numbers link to the reference sheet. Points the client had already made link to the earlier recaps.</li>
@@ -79,7 +77,7 @@
     </article>
 
     <article class="q">
-      <div class="q-head"><span class="q-id">A2</span><h3>Recap: Kettle &amp; Crumb business review, 24 Sep, with proposed page edits</h3><span class="pill done">Done</span></div>
+      <div class="q-head"><span class="q-id">A2</span><h3>Recap: Kettle &amp; Crumb business review, 24 Sep, with proposed page edits</h3></div>
       <ul>
         <li>The client's 30-day GMV differs from the reference sheet, and its scope was not confirmed. It is flagged, and the sheet update waits for confirmation.</li>
         <li>The sample budget is settled at $8 a box, up to $600 a month. That covers 75 boxes, while October needs about 70 for the fall flavor launch plus affiliate samples.</li>
@@ -89,7 +87,7 @@
     </article>
 
     <article class="q">
-      <div class="q-head"><span class="q-id">A3</span><h3>Briefing: Kettle &amp; Crumb affiliates, end to end</h3><span class="pill done">Done</span></div>
+      <div class="q-head"><span class="q-id">A3</span><h3>Briefing: Kettle &amp; Crumb affiliates, end to end</h3></div>
       <ul>
         <li>The affiliate process from finding creators to paying commission, each step linked to where the client agreed it.</li>
         <li>One conflict to resolve: samples go only to creators on the targeted plan, but that plan covers the top 10 creators and the goal is 60 affiliates.</li>
@@ -103,7 +101,7 @@
     <div class="section-head"><span class="eyebrow">Block B</span><h2 id="block-b">Move the number</h2></div>
 
     <article class="q">
-      <div class="q-head"><span class="q-id">B1</span><h3>Pods ranked on recaps posted within an hour</h3><span class="pill done">Done</span></div>
+      <div class="q-head"><span class="q-id">B1</span><h3>Pods ranked on recaps posted within an hour</h3></div>
       <p>Share of client calls with a recap posted within an hour, recalculated from the September call log (140 calls). Target: 80% in every pod by 31 Oct.</p>
       <div class="table-wrap">
         <table>
@@ -131,19 +129,17 @@
     </article>
 
     <article class="q">
-      <div class="q-head"><span class="q-id">B2</span><h3>Which pod first, and what is causing its gap</h3><span class="pill done">Done</span></div>
-      <p><strong>South first.</strong> It is the biggest pod and 26 recaps short, but 36 of its 40 calls are already recorded and the team already writes its own summaries quickly, so the fix is within reach this week. West scores lower, but its gap is capture: 26 of its 30 calls are on WhatsApp and never reach the agent. That needs a new way to record calls, so West comes second.</p>
-      <p><strong>What is causing South's gap:</strong></p>
+      <div class="q-head"><span class="q-id">B2</span><h3>Which pod first, and what is causing its gap</h3></div>
+      <p><strong>South first.</strong> It is the biggest pod and 26 recaps short, but it records 36 of its 40 calls and already writes fast summaries, so the fix is within reach this week. West scores lower, but 26 of its 30 calls are on WhatsApp and never reach the agent. That needs a new way to record calls, so West comes second.</p>
       <ul>
-        <li><strong>The agent is too slow for how South works.</strong> South relies on the agent for every recap. It posts within the hour 14 times out of 34, with a median of 74 minutes, at every time of day.</li>
-        <li><strong>So the team works around it.</strong> Marcus and Tomas send clients their own notes first, then skip the agent's recap when it arrives (<a href="https://github.com/dzoni2708/ironside-bizops-case-study/blob/main/slack-thread.txt">Slack thread</a>). Those notes are fast, but they are never posted as recaps, so they don't count and never reach the brain. Two recorded Kettle &amp; Crumb calls never got a recap at all: the two recapped in Block A.</li>
-        <li><strong>It is not the recording or the recap quality.</strong> South records 90% of its calls, and Marcus says the content is fine: "if it posted in 10–15 min I'd use it."</li>
+        <li><strong>The agent is too slow.</strong> South relies on it for every recap. It makes the hour 14 times out of 34, with a median of 74 minutes, at every time of day.</li>
+        <li><strong>So the team works around it.</strong> Marcus and Tomas email clients their own notes and skip the agent's recap (<a href="https://github.com/dzoni2708/ironside-bizops-case-study/blob/main/slack-thread.txt">Slack thread</a>). The notes are fast but never posted, so they don't count or reach the brain.</li>
+        <li><strong>It is not the recording or the quality.</strong> South records 90% of its calls, and Marcus says: "if it posted in 10–15 min I'd use it." North shows the fix: its account managers post their own recaps in about 18 minutes.</li>
       </ul>
-      <p>North shows the fix: its account managers post recaps themselves, typically within 18 minutes.</p>
-      <p>The proposal to count emailed summaries would move the number without fixing anything. Emailed summaries don't reach the brain or the client's Slack channel, and nothing checks that they carry action items with an owner and a due date. Keep the definition and fix the speed.</p>
+      <p>Counting emailed summaries would move the number without fixing anything: they don't reach the brain or the client's channel, and nothing checks their action items.</p>
     </article>
     <article class="q">
-      <div class="q-head"><span class="q-id">B3</span><h3>One-week plan for South</h3><span class="pill done">Done</span></div>
+      <div class="q-head"><span class="q-id">B3</span><h3>One-week plan for South</h3></div>
       <p><strong>The idea:</strong> South already writes fast notes. Post them as the recap, in the client's channel, within the hour, the way North does. Engineering makes the agent fast enough to take over again.</p>
       <ul>
         <li><strong>I do:</strong> set Marcus and Tomas up with a template that formats their notes in two minutes and checks them against the brain's rules, check each call at 45 minutes, fix the dashboard, and post the number on Friday.</li>
@@ -158,7 +154,7 @@
   <section aria-labelledby="block-c">
     <div class="section-head"><span class="eyebrow">Block C</span><h2 id="block-c">Train the agent</h2></div>
     <article class="q">
-      <div class="q-head"><span class="q-id">C1</span><h3>What is wrong with the agent's recap</h3><span class="pill done">Done</span></div>
+      <div class="q-head"><span class="q-id">C1</span><h3>What is wrong with the agent's recap</h3></div>
       <p>The agent's recap of the 15 Sep Loop Athletic weekly, compared with its transcript and the brain's rules.</p>
       <div class="table-wrap">
         <table class="wrap">
@@ -177,7 +173,7 @@
       <p><strong>Why it happened.</strong> Each failure traces to the skill file: "include everything relevant, so nothing gets lost" let the private message in, "include the key numbers" retyped the GMV, "list the next steps" asked for no owners or dates, and "post it" had no check before posting. The skill never mentions the brain's rules or the template.</p>
     </article>
     <article class="q">
-      <div class="q-head"><span class="q-id">C2</span><h3>Skill fix, with before and after</h3><span class="pill done">Done</span></div>
+      <div class="q-head"><span class="q-id">C2</span><h3>Skill fix, with before and after</h3></div>
       <p>The new skill tells the agent to read the brain's rules and earlier recaps first, leave out anything after the client leaves, link numbers instead of typing them, give every action item an owner and a date, and run a check before posting. It was rerun in a new session that could see only the skill, the brain and the transcript.</p>
       <div class="table-wrap">
         <table class="wrap">
@@ -195,7 +191,7 @@
       <p class="files">Files: <a href="https://github.com/dzoni2708/ironside-bizops-case-study/blob/main/workers/skills/skill-recap.md">skill-recap.md</a> · <a href="https://github.com/dzoni2708/ironside-bizops-case-study/blob/main/workers/output/bad-recap.md">bad-recap.md</a> (before) · <a href="https://github.com/dzoni2708/ironside-bizops-case-study/blob/main/workers/output/after-recap.md">after-recap.md</a> (after)</p>
     </article>
     <article class="q">
-      <div class="q-head"><span class="q-id">C3</span><h3>Ticket for the agent's engineer</h3><span class="pill done">Done</span></div>
+      <div class="q-head"><span class="q-id">C3</span><h3>Ticket for the agent's engineer</h3></div>
       <p>Three changes a skill file can't make, each with its evidence:</p>
       <ul>
         <li><strong>Cut the transcript when the last client leaves.</strong> Recording continued after the client left in two of three transcripts. The new skill kept the private content out, but only because the model obeyed.</li>
