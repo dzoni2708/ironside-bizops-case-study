@@ -43,6 +43,8 @@
   table { width: 100%; border-collapse: collapse; font-size: 15px; font-variant-numeric: tabular-nums; }
   th, td { text-align: left; padding: 9px 10px; border-bottom: 1px solid var(--line); white-space: nowrap; }
   th { font: 600 12px/1.2 var(--mono); letter-spacing: 0.04em; text-transform: uppercase; color: var(--muted); }
+  table.wrap td { white-space: normal; vertical-align: top; }
+  table.wrap td:last-child { color: var(--muted); width: 32%; }
   td.num, th.num { text-align: right; }
   td.share { font-weight: 600; }
   .bad { color: var(--bad); }
@@ -156,7 +158,23 @@
   <section aria-labelledby="block-c">
     <div class="section-head"><span class="eyebrow">Block C</span><h2 id="block-c">Train the agent</h2></div>
     <article class="q">
-      <div class="q-head"><span class="q-id">C1</span><h3>What is wrong with the agent's recap</h3><span class="pill wip">To follow</span></div>
+      <div class="q-head"><span class="q-id">C1</span><h3>What is wrong with the agent's recap</h3><span class="pill done">Done</span></div>
+      <p>The agent's recap of the 15 Sep Loop Athletic weekly, compared with its transcript and the brain's rules.</p>
+      <div class="table-wrap">
+        <table class="wrap">
+          <thead><tr><th>Problem</th><th>Rule it breaks</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Private content included.</strong> A message the client sent Lena privately, pasted in after he left the call: "Theo's CEO is frustrated with the agency fees and might put us up for review in Q1."</td><td>Nothing said in private; no commercial terms</td></tr>
+            <tr><td><strong>An action item built from that private message:</strong> "Keep an eye on the account review risk."</td><td>Nothing said in private</td></tr>
+            <tr><td><strong>GMV retyped and not flagged.</strong> "$95K GMV this month" differs from the reference sheet, may cover a different period, and is more precise than "about ninety-five thousand".</td><td>Numbers link to the sheet; conflicts are flagged</td></tr>
+            <tr><td><strong>Next steps with no owner or due date.</strong> The October brief is Lena's, due Fri 18 Sep. The size chart has no owner and should be an open question.</td><td>Every action item has one owner and a due date</td></tr>
+            <tr><td><strong>No link to the 10 Sep weekly,</strong> which covered the fall videos, the switch to try-on and Theo's size chart task.</td><td>Link what the client already told us</td></tr>
+            <tr><td><strong>An opinion:</strong> "Great call with Theo."</td><td>No opinions about people</td></tr>
+            <tr><td><strong>Not the template:</strong> no attendees or source, a paragraph instead of 3 to 6 bullets, no open questions or flags.</td><td>Recap template</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p><strong>Why it happened.</strong> Each failure traces to the skill file: "include everything relevant, so nothing gets lost" let the private message in, "include the key numbers" retyped the GMV, "list the next steps" asked for no owners or dates, and "post it" had no check before posting. The skill never mentions the brain's rules or the template.</p>
     </article>
     <article class="q">
       <div class="q-head"><span class="q-id">C2</span><h3>Skill fix, with before and after</h3><span class="pill wip">To follow</span></div>
